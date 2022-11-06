@@ -1,0 +1,56 @@
+.about-more {
+    padding-top: 31px;
+    padding-bottom: 60px;
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $red-text-gradiend;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        padding-top: 9px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-more {
+        padding-top: 60px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-more {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 61px;
+
+        &__text-wrap {
+            padding-right: 60px;
+        }
+
+        &__text:last-child {
+            padding-bottom: 0;
+        }
+
+        &__title {
+            padding: 0;
+            min-width: 362px;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.advantages {
+    padding-top: 30px;
+    padding-bottom: 28px;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        overflow: auto;
+        padding: 0 15px 30px;
+        margin: 0 -30px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: right;
+        color: $grey-text;
+        white-space: nowrap;
+        margin: 0 15px;
+
+        &.advantages__btn--active {
+            background: $red-text-reversed;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__content {
+        display: none;
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+        padding-top: 30px;
+
+        &.advantages__content--active {
+            display: block;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        padding-bottom: 30px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        padding: 62px 0 58px;
+
+        &__list {
+            margin: 0 -60px;
+            padding: 0 45px 60px;
+        }
+
+        &__btn {
+            font-size: 38px;
+            line-height: 46px;
+            transition-duration: 300ms;
+            transition-property: transform;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &__content {
+            padding-top: 60px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .advantages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0 57px;
+
+        &__list {
+            display: block;
+            text-align: right;
+            overflow: visible;
+            padding: 0 60px 0 0;
+            margin: 0;
+            max-width: 439px;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+        }
+
+        &__btn {
+            margin: 15px 0;
+        }
+
+        &__content {
+            max-width: 641px;
+            border-top: none;
+            padding: 0 0 0 60px;
+        }
+    }
+}

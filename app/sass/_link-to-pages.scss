@@ -1,0 +1,23 @@
+.link-to-pages {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &__arrow {
+        fill: none;
+        stroke: $blue-regular;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        transition-duration: 300ms;
+        transition-property: margin-left, stroke;
+    }
+
+    &:hover &__arrow {
+        margin-left: 5px;
+        stroke: $accent;
+    }
+}

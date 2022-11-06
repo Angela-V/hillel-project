@@ -1,0 +1,78 @@
+.photo-team {
+    background-image: url(../img/team-mb.jpg);
+    background-color: $grey-soft;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 11% 0;
+    margin: 0 -30px;
+
+    &__text {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+        padding-left: 12px;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .photo-team {
+        background-image: url(../img/team-mb@2x.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    .photo-team {
+        margin: 0 -60px;
+        padding: 13.7% 0;
+        background-image: url(../img/team-tablet-sd.jpg);
+
+        &__text {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+            padding-left: 63px;
+
+        }
+    }
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+        .photo-team {
+            background-image: url(../img/team-tablet-sd@2x.jpg);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .photo-team {
+        padding: 11.4% 0;
+        background-image: url(../img/team-tablet-hd.jpg);
+
+        &__text {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+        .photo-team {
+            background-image: url(../img/team-tablet-hd@2x.jpg);
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .photo-team {
+        padding-top: 163px;
+        padding-bottom: 158px;
+
+        &__text {
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.bg-gradient {
+    background: $supersoft-gradiend;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        height: 10px;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background: $grey-shadow-dark;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &::before {
+        content: '';
+        height: 10px;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        background: $grey-shadow-light;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &--letter {
+        background: url(../img/letter.svg) no-repeat center top,
+            $supersoft-gradiend;
+        background-size: 523px 600px, auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-gradient--letter {
+        background-size: 893px 1024px, auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bg-gradient--letter {
+        background-size: 670px 768px, auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .bg-gradient--letter {
+        background-size: 697px 799px, auto;
+    }
+}

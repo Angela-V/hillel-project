@@ -1,0 +1,134 @@
+.companies {
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-blue;
+        text-align: center;
+        padding: 60px 0 30px;
+
+        &--pd {
+            padding: 81px 0 30px;
+        }
+    }
+
+    &__item-wrap {
+        margin: 0 -30px;
+    }
+
+    &__item {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--blue {
+            background-color: $blue;
+        }
+
+        &--dark-blue {
+            background-color: $dark-blue;
+        }
+
+        &--orange {
+            background-color: $orange;
+        }
+
+        &--purple {
+            background-color: $purple;
+        }
+
+        &--light-orange {
+            background-color: $light-orange;
+        }
+
+        &--grey1 {
+            background-color: $grey1;
+        }
+
+        &--dark-red,
+        &--aquamarine,
+        &--grey2,
+        &--plum,
+        &--mid-blue,
+        &--black {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .companies {
+        &__title {
+            &--pd {
+                padding: 81px 0 29px;
+            }
+        }
+
+        &__item-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -60px;
+        }
+
+        &__item {
+            width: 33.333%;
+
+            &--dark-red {
+                display: flex;
+                background-color: $dark-red;
+            }
+
+            &--aquamarine {
+                display: flex;
+                background-color: $aquamarine;
+            }
+
+            &--grey2 {
+                display: flex;
+                background-color: $grey2;
+            }
+
+            &--plum {
+                display: flex;
+                background-color: $plum;
+            }
+
+            &--mid-blue {
+                display: flex;
+                background-color: $mid-blue;
+            }
+
+            &--black {
+                display: flex;
+                background-color: $black;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .companies {
+        &__title {
+            padding-top: 59px;
+
+            &--pd {
+                padding: 80px 0 30px;
+            }
+        }
+
+        &__item {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .companies {
+        &__item-wrap--mg {
+            margin-bottom: 61px;
+        }
+    }
+}

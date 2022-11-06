@@ -1,0 +1,27 @@
+.slider-dots {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+
+    & button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background: rgba(36, 163, 255, 0.2);
+        border-radius: 50%;
+        border: none;
+        font-size: 0;
+        margin: 0 7px;
+        transition-duration: 300ms;
+        transition-property: background-color;
+
+        &:hover {
+            background-color: rgba(36, 163, 255, 0.6);
+        }
+    }
+
+    & li.slick-active button {
+        background-color: $blue-regular;
+    }
+}

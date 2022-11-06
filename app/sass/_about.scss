@@ -1,0 +1,118 @@
+.about {
+    padding-top: 29px;
+    padding-bottom: 30px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $red-text-gradiend;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        padding-bottom: 28px;
+    }
+
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+        padding-bottom: 21px;
+    }
+
+    &__statistic {
+        margin-top: 9px;
+        padding-left: 30px;
+        border-left: 4px solid $grey-separator;
+    }
+
+    &__article {
+        padding-bottom: 40px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &__article-number {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        background: $red-text-gradiend;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 11px;
+
+        &--pic01::before {
+            content: '';
+            background-image: url(../img/flag.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        &--pic02::before {
+            content: '';
+            background-image: url(../img/bag.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        &--pic03::before {
+            content: '';
+            background-image: url(../img/star.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+    }
+
+    &__article-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-blue;
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__text {
+            padding-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__statistic {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 39px;
+
+        &__content {
+            padding-right: 30px;
+        }
+
+        &__statistic {
+            margin-top: 0;
+            min-width: 388px;
+        }
+    }
+}

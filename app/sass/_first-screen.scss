@@ -1,0 +1,62 @@
+.first-screen {
+    padding-top: 129px;
+    padding-bottom: 30px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $white;
+        padding-bottom: 159px;
+    }
+
+    &__btn {
+        width: 42px;
+        height: 42px;
+        display: block;
+        margin: 0 auto;
+
+        &:hover .first-screen__btn-circle,
+        &:hover .first-screen__btn-arrow {
+            stroke: $accent;
+        }
+    }
+
+    &__btn-circle,
+    &__btn-arrow {
+        transition-duration: 300ms;
+        transition-property: stroke;
+    }
+}
+
+@media (min-width: 768px) {
+    .first-screen {
+        padding-top: 269px;
+
+        &__title {
+            padding-bottom: 415px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .first-screen {
+        padding-top: 245px;
+
+        &__title {
+            padding-bottom: 289px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .first-screen {
+        padding-top: 261px;
+
+        &__title {
+            padding-bottom: 305px;
+        }
+    }
+}

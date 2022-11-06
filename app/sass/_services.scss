@@ -1,0 +1,124 @@
+.services {
+    padding-bottom: 30px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $red-text-gradiend;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        padding-top: 9px;
+        padding-bottom: 30px;
+
+        &--pd {
+            padding-top: 29px;
+        }
+    }
+
+    &__article {
+        padding-top: 122px;
+        padding-bottom: 30px;
+        height: 100%;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 92px;
+            height: 92px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &--pic01::before {
+            background-image: url(../img/ecommerce.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &--pic02::before {
+            background-image: url(../img/support.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &--pic03::before {
+            background-image: url(../img/coprorate.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &--pic04::before {
+            background-image: url(../img/trust.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &--pic05::before {
+            background-image: url(../img/protection.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &--pic06::before {
+            background-image: url(../img/court.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    &__link-article h3 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    &__text-article {
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        padding-bottom: 0px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            padding-bottom: 60px;
+
+            &--pd {
+                padding-top: 60px;
+            }
+        }
+
+        &__list-articles {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -30px;
+        }
+
+        &__article {
+            width: 50%;
+            padding: 122px 30px 60px;
+
+            &::before {
+                left: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .services__article {
+        width: 33.333%;
+    }
+}
